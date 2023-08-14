@@ -82,8 +82,6 @@ dist
 
 # Gatsby files
 .cache/
-# Comment the next line if you want to track public folder
-public
 
 # vuepress build output
 .vuepress/dist
