@@ -1,0 +1,46 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.17.1'
+
+    - name: Cache node modules
+      uses: actions/cache@v3
+      with:
+        path: wss-web/node_modules
+        key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-node-
+
+    - name: Install Dependencies
+      run: |
+        cd wss-web
+        npm install
+
+    - name: Build Web App
+      run: |
+        cd wss-web
+        npm run build
+
+    - name: Test Web App
+      run: |
+        cd wss-web
+        npm test -- --watchAll=false
+
