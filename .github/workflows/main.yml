@@ -36,11 +36,9 @@ jobs:
 
     - name: Build Web App
       run: |
-        cd wss-web
         npm run build
 
     - name: Test Web App
       run: |
-        cd wss-web
         npm test -- --watchAll=false
 
