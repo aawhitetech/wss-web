@@ -1,0 +1,81 @@
+@import 'index.scss';
+
+
+/* Add some padding to the container */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Style the cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons */
+.body .btn .btn-primary {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: $light;
+}
+
+/* Layout */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.flex-fill {
+  flex: 1;
+}
+
+/* Header */
+.header {
+  font-size: large;
+  font-weight: 400; /* Lighter Font Weight */
+  background-color: $primary;
+}
+
+.header .navbar-nav .nav-link {
+  color: $light;
+}
+
+/* Footer */
+.footer {
+  height: auto;
+  font-size: small;
+  font-weight: 400; /* Lighter Font Weight */
+  background-color: $primary;
+  color: $light;
+}
+
+/* Home Page */
+.home {
+  background:
+    linear-gradient(90deg, #000 2%, transparent 25%, transparent 90%, #000 98%), 
+    url('./assets/images/home.jpg') no-repeat center center;
+
+  background-size: auto 100%;
+  background-color: #000000;
+  color: #222222;
+}
+
+/* Contact Page */
+.contact {
+  background:
+    linear-gradient(90deg, #000 2%, transparent 25%, transparent 90%, #000 98%), 
+    url('./assets/images/contact.jpg') no-repeat center center;
+  background-size: auto 100%;
+  background-color: #000000;
+  color: #222222;
+}

@@ -1,0 +1,17 @@
+$primary: #252525;
+$secondary: #b4b4b4;
+// "success":    $success,
+// "info":       $info,
+// "warning":    $warning,
+// "danger":     $danger,
+$light:      #77777777;
+$dark:      #a8a8a8;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+$font-family-sans-serif: Oswald, -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
